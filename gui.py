@@ -9,7 +9,6 @@ def news():
     news_list = client.get_news()
     result_title.set(news_list[0]["title"] + "\n" + news_list[1]["title"] + "\n" + news_list[2]["title"])
 
-
 # tkinter object
 master = Tk()
 master.title("NEWS")
@@ -36,7 +35,6 @@ loc.grid(row=1, column=1)
 
 top = Entry(master)
 top.grid(row=2, column=1)
-
 
 # Creating label for class variable
 # name using widget Entry
